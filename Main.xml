@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_back_select"
+    tools:context="com.csns.indiastory.SelectDestinationActivity"
+    android:id="@+id/mainView">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginBottom="32dp"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="SELECT YOUR DESTINATION"/>
+        <com.csns.indiastory.adapters.CustomAutoComplete
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="64dp"
+            android:layout_marginLeft="64dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:hint="Enter Destination"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_auto_text_white"/>
+    </LinearLayout>
+
+</RelativeLayout>
